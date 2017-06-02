@@ -9,15 +9,21 @@ def prompt_for_number():
     """Prompt the user for a number in base-10 and return it as int."""
     return int(input('A number between 1 and 99: '))
 
+def get_tens_digit(num):
+    """Return the tens digit of a number.
+    The number must be less than 100.
+    """
+    return num // 10
+
+def get_ones_digit(num):
+    """Return the ones digit of a number. """
+    return num % 10
 
 
+def tens_digit_to_word(tens_digit):
+    """From the tens digit, reture the word respresenting that."""
 
-
-def get_tens_digit of a number(num)
-"""Return
-"""
-
-if tens == 9:
+if tens_digit == 9:
     tens_word = 'ninety'
 elif tens == 8:
     tens_word = 'eighty'
@@ -71,4 +77,4 @@ print(output)
 
 num = prompt_for_number()
 another = another_func(num)
-another2 = another_func2(another)
+# another2 = another_func2(another)
